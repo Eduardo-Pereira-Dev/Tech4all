@@ -1,0 +1,399 @@
+@import "utf-8";
+
+:root{
+    --cor1:#FFD700;
+    --cor2:#FF5733;
+    --cor3:#00BFFF;
+    --cor4:#32CD32;
+    --cor5:#333333;
+    --cor6:#800080;
+}
+body{
+    margin: 0% 0%;
+    padding: 0% 0%;
+    position: relative;
+}
+
+/*------------------------------------DIMENÇAO CONTEUDO------------------------------------------*/
+
+.dimention-content{
+   margin: 0% 0%;
+   padding: 0% 5%;
+}
+.dimention-content h1, h2, h3{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif, Times, serif;
+    margin: 0px 0px;
+}
+.dimention-content p{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif, Times, serif;
+    line-height: 2rem;
+    margin: 0px 0px;
+}
+.dimention-cta{
+    margin: 0% 0%;
+    padding: 0% 5%;
+    height: 580px;
+}
+.dimention-cta h1, h2, h3{
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif, Times, serif;
+        margin: 0px 0px;
+    }
+.dimention-cta p{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif, Times, serif;
+    line-height: 2rem;
+    margin: 0px 0px;
+}
+
+/*--------------------------------------CABEÇALHO-------------------------------------------------*/
+
+#cabeça{
+    background-color: var(--cor3);
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.555);
+    text-align: center;
+}
+#cabeça h1{
+    color: #ffffff;
+    padding: 90px 0px 90px;
+}
+#cabeça p{
+    color: white;
+    padding: 0px 0px 90px 0px;
+}
+#cabeça p strong{
+    color: var(--cor1);
+}
+#cabeça a{
+    background-color: var(--cor4);
+    border: 0.5px solid rgba(0, 0, 0, 0.041);
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 10px 1%;
+    text-decoration: none;
+}
+#cabeça a:hover{
+    box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.247);
+}
+
+/*---------------------------------------INTRODUÇAO------------------------------------------------*/
+#intro-main{
+    position: relative;
+}
+#img-intro{
+    margin: 0px 0px;
+    padding: 60px 0px 60px 0px;
+}
+#intro-main p{
+    position: absolute;
+    right: 5%;
+    top: 50px;
+}
+#intro-main p strong{
+    color: var(--cor6);
+}
+
+/*-----------------------------------------POR QUE LP?-------------------------------------------*/
+
+#why-main{
+    text-align: center;
+}
+#why-main h2{
+    font-size: 2rem;
+    padding: 30px 0px 90px 0px;
+}
+#why-main p{
+    display: inline-block;
+    padding: 0px 5% 90px 5%;
+    width: 20%;
+}
+#why-main p strong{
+    color: var(--cor1);
+}
+
+/*-----------------------------------------------BEST---------------------------------------------*/
+
+#best-main{
+    text-align: center;
+}
+#best-main h2{
+    padding: 0px 0px 90px 0px;
+}
+#best-main p strong{
+    color: var(--cor6);
+}
+
+/*-----------------------------------------------HATE---------------------------------------------*/
+
+#hate-main{
+    text-align: center;
+}
+#hate-main h2{
+    padding: 90px 0% 90px 0%;
+}
+#hate-main .banner{
+    height: 190px;
+    width: 99%;
+    overflow: hidden;
+}
+#hate-main .card{
+    padding: 0% 10px;
+    height: 190px;
+    animation-name: carousel;
+    animation-duration: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    display: flex;
+}
+@keyframes carousel{
+    0% {margin-top: 0;}
+    25% {margin-top: 0;}
+	26% {margin-top: -210px;}
+	50% {margin-top: -210px;}
+	51% {margin-top: -430px;}
+    76% {margin-top: -430px}
+    77% {margin-top: -650px;}
+    99% {margin-top: -650px;}
+	100% {margin-top: 0px;}
+}
+
+/*------------------------------------ABOUT------------------------------------------------------*/
+#about-main{
+    text-align: center;
+}
+#about-main h2{
+    padding: 90px 0px 90px 0px;
+}
+#about-main p{
+    display: inline-block;
+    padding: 0px 0px 60px 0px;
+}
+#about-main p strong{
+    color: var(--cor2);
+}
+
+/*------------------------------------------CTA-------------------------------------------------*/
+
+#cta-main{
+    background-color: var(--cor1);
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.555);
+    text-align: center;
+}
+#cta-main h2{
+    padding: 90px 0% 90px 0%;
+}
+#cta-main p{
+    padding: 0px 0% 90px 0%;
+}
+#cta-main p strong{
+    color: white;
+}
+#cta-main a{
+    background-color: var(--cor6);
+    border: 0.5px solid rgba(0, 0, 0, 0.041);
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 15px 5%;
+    text-decoration: none;
+}
+#cta-main a:hover{
+    box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.247);
+}
+
+/*-------------------------------------------CONTACT----------------------------------------------*/
+
+#contact-main{
+    text-align: center;
+}
+#contact-main h2{
+    padding: 90px 0px;
+}
+#contact-icons{
+    padding: 60px 0px;
+}
+#contact-icons a{
+    text-decoration: none;
+}
+#contact-icons a abbr{
+    text-decoration: none;
+}
+#contact-icons a abbr img:hover{
+    padding-bottom: 9px;
+}
+
+/*--------------------------------------THANKS---------------------------------------------------*/
+
+#cta-final{
+    background-color: var(--cor4);
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.555);
+    text-align: center;
+    position: relative;
+}
+#cta-final h2{
+    color: white;
+    padding: 90px 0% 90px 0%;
+}
+#cta-final p{
+    color: white;
+    padding: 10px 0% 110px 0%;
+}
+#cta-final p strong{
+    color: var(--cor1);
+}
+#cta-final a{
+    background-color: var(--cor2);
+    border: 0.5px solid rgba(0, 0, 0, 0.041);
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 15px 5%;
+    text-decoration: none;
+}
+#cta-final a:hover{
+    box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.247);
+}
+
+/*------------------------------------------FOOTER------------------------------------------------*/
+
+#rodape{
+    background-color: #000000;
+    padding: 0px 5%;
+    position: relative;
+}
+#rodape p{
+    color: rgb(221, 221, 221);
+    display: inline-block;
+    padding: 0px 2%;
+    text-align: center;
+}
+#rodape a{
+    padding: 0px 10px;
+    color: rgb(33, 33, 255);
+    text-decoration: none;
+}
+#rodape a:hover{
+    color: white;
+}
+#tech4all{
+    position: absolute;
+    right: 5%;
+    top: 35%;
+}
+#funcionamento{
+    margin: 0px;
+    padding-bottom: 200px;
+}
+#contacts-rodape{
+    display: inline;
+}
+
+/*--------------------------------------RESPONSIVE------------------------------------------------*/
+
+@media (min-width: 300px) and (max-width: 500px){
+
+.dimention-content{
+    margin: 0% 0%;
+    padding: 0% 2%;
+ }
+ .dimention-cta{
+    height: 580px;
+ }
+ .dimention-content h1, h2, h3{
+     font-size: 1.5rem;
+     font-family: Arial, Helvetica, sans-serif, Times, serif;
+     margin: 0px 0px;
+ }
+ .dimention-content p{
+     font-size: 1rem;
+     font-family: Arial, Helvetica, sans-serif, Times, serif;
+     line-height: 2rem;
+     margin: 0px 0px;
+ }
+#cabeça h1{
+    padding: 60px 0px 40px 0px;
+}
+#cabeça p{
+    padding: 20px 0px;
+}
+#img-intro{
+    padding: 60px 0%;
+}
+#intro-main p{
+    position: static;
+    text-align: center;
+}
+#intro-main p br{
+    display: none;
+}
+#why-main h2{
+    padding: 60px 0%;
+}
+#why-main p{
+    padding: 10% 0%;
+    display: inline;
+}
+#best-main h2{
+    padding: 60px 0px;
+}
+#hate-main h2{
+    padding: 60px 0px;
+}
+#hate-main .card{
+    animation-name: carousel;
+    animation-duration: 0s;
+    display: inline-flex;
+    height: 190px;
+}
+.eoq{
+    width: 35%;
+}
+#about-main h2{
+    padding: 60px 0px;
+}
+#about-main p{
+    padding: 20px 10%;
+}
+#cta-main{
+    padding: 0px 0px 40px 0px;
+}
+#contact-main{
+    padding:  0px 0px 40px 0px;
+}
+#rodape{
+    text-align: center;
+}
+#signature{
+    text-align: center;
+}
+}
+@media(min-width: 501px) and (max-width: 749px){
+    #img-intro{
+        padding: 60px 24%;
+        
+    }
+    #intro-main p{
+        position: static;
+        text-align: center;
+    }
+    #intro-main p br{
+        display: none;
+    }
+}
+@media(min-width: 750px){
+    #img-intro{
+        padding: 60px 0% 60px 20%;
+    }
+    #intro-main p{
+        position: absolute;
+        top: 50px;
+        right: 9%;
+        width: 200px;
+    }
+    #intro-main p br{
+        display: none;
+    }
+    #about-main p{
+        padding: 20px 5%;
+    }
+}
